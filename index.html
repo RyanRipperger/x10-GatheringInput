@@ -5,21 +5,33 @@
     <script>
       function getName(){
         var fullName;
-        fullName=document.getElementById("first").value;
-        document.getElementById("message").innerHTML = fullname;
+        fullName=document.getElementById("first").value + " " + document.getElementById("last").value;
+        document.getElementById("message").innerHTML = fullName;
       }
     </script>
+    <style>
+      body{
+        background-color: lightgrey;
+        color: navy;
+      }
+    </style>
   </head>
   <body>
+    <h2>Gathering Input</h2>
+
     <form>
       First: <input type="text" id="first">
+      <br><br>
       Last: <input type="text" id="last">
-      <input type="button" id="doneButton" onclick="getName();">
-
+      <br><br>
+      <button type="button" id="doneButton" onclick="getName();">
+        Done
+      </button>
     </form>
 
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <p id="message">
+
+    </p>
 
   </body>
 </html>
