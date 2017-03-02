@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gathering Input</title>
+    <script>
+      function getName(){
+        var fullName;
+        fullName=document.getElementById("first").value;
+        document.getElementById("message").innerHTML = fullname;
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      First: <input type="text" id="first">
+      Last: <input type="text" id="last">
+      <input type="button" id="doneButton" onclick="getName();">
+
+    </form>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+  </body>
+</html>
